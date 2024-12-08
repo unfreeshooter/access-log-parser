@@ -4,8 +4,41 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Введите текст и нажмите <Enter>: ");
-        String text = new Scanner(System.in).nextLine();
-        System.out.println("Длина текста: " + text.length());
+        //выводим текст в консоль для числа 1
+        System.out.println("Введите первое число:");
+
+        //получаем первое число из консоли
+        int firstNumber = new Scanner(System.in).nextInt();
+
+        //выводим текст в консоль для числа 1
+        System.out.println("Введите второе число:");
+
+        //получаем первое число из консоли
+        int secondNumber = new Scanner(System.in).nextInt();
+
+        //складываем введенное
+        int sum = firstNumber + secondNumber;
+
+        //выводим текст в консоль для суммы чисел
+        System.out.println("Сумма введенных чисел: "+sum);
+
+        //считаем разницу введенных чисел
+        int diff = firstNumber - secondNumber;
+
+        //выводим текст в консоль для разницы чисел
+        System.out.println("Разность введенных чисел: "+diff);
+
+        //считаем произведение введенных чисел
+        int prod = firstNumber * secondNumber;
+
+        //выводим текст в консоль для произведения чисел
+        System.out.println("Произведение введенных чисел: "+prod);
+
+        //приводим к одному типу и считаем частное введенных чисел
+        double quotient = (double) firstNumber / secondNumber;
+
+        //выводим текст в консоль для деления чисел
+        System.out.println("Частное введенных чисел: "+quotient);
+
     }
 }
